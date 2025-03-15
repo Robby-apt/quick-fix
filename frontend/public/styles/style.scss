@@ -1,0 +1,191 @@
+// Import fonts from google
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// Global variables
+$primary-color: #fff;
+$secondary-color: #000;
+$bg-color: #2563eb;
+$inactive-color: rgba(0, 0, 0, 0.6);
+$accent-color: #111827;
+
+// Global styling
+* {
+	font-family: Roboto, sans-serif;
+	margin: 0;
+	padding: 0;
+	transition: 0.25s ease-in-out;
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: initial;
+	text-decoration: none;
+}
+
+.globalNav {
+	background-color: $primary-color;
+	border-bottom: $accent-color solid 0.125rem;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	// padding: 0 5rem;
+
+	.branding {
+		// background-color: aqua;
+		display: flex;
+		margin: 1.25rem auto 1.25rem 5rem;
+
+		a {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin: none;
+			padding: none;
+
+			img {
+				margin: 0;
+				padding: 0;
+				width: 3.125rem;
+				height: 3.125rem;
+			}
+
+			h1 {
+				color: $bg-color;
+				font-size: 2.5rem;
+				font-weight: bold;
+				margin: auto 0 auto 1.25rem;
+			}
+		}
+	}
+
+	.navLinks {
+		// background-color: aqua;
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		a {
+			color: $secondary-color;
+			font-size: 1.25rem;
+			font-weight: bold;
+
+			&:not(:last-child) {
+				margin-right: 1.25rem;
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.navIcons {
+		display: none;
+		flex-direction: row;
+		margin: auto 5rem auto 0;
+
+		i {
+			font-size: 1.25rem;
+		}
+	}
+
+	.navLinksResponsive {
+		background-color: $primary-color;
+		display: none;
+		flex-direction: column;
+		margin-right: 5rem;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		transform: translate(0%, 0%);
+
+		a {
+			color: $accent-color;
+			font-size: 1.25rem;
+			font-weight: bold;
+
+			&:not(:last-child) {
+				margin-bottom: 1.25rem;
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.regAndLogin {
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+			position: unset;
+			transform: unset;
+
+			a {
+				text-align: center;
+				width: 100%;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.regAndLoginDiv {
+		// background-color: aqua;
+		display: flex;
+		margin: auto 5rem auto 0;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translate(0, -50%);
+
+		a {
+			border-radius: 0.625rem;
+			font-size: 1.25rem;
+			font-weight: bold;
+			padding: 0.3125rem 0.625rem;
+		}
+
+		.loginBtn {
+			color: $inactive-color;
+			border: $inactive-color solid 0.125rem;
+			margin-right: 1.25rem;
+
+			&:hover {
+				border: $accent-color solid 0.125rem;
+				color: $accent-color;
+			}
+		}
+
+		.signupBtn {
+			background-color: rgba(37, 100, 235, 0.9);
+			border: rgba(37, 100, 235, 0.8) solid 0.125rem;
+			color: $primary-color;
+
+			&:hover {
+				background-color: $bg-color;
+				border: $bg-color solid 0.125rem;
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+// Import other sections scss
+@import './home';
+@import './about_us';
+@import './services';
+@import './contact';
+@import './login';
+@import './signup';
+@import './media_queries';

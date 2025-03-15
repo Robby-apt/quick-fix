@@ -1,1 +1,155 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: 0.25s ease-in-out;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+.globalNav {
+  background-color: #fff;
+  border-bottom: #111827 solid 0.125rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.globalNav .branding {
+  display: flex;
+  margin: 1.25rem auto 1.25rem 5rem;
+}
+.globalNav .branding a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: none;
+  padding: none;
+}
+.globalNav .branding a img {
+  margin: 0;
+  padding: 0;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.globalNav .branding a h1 {
+  color: #2563eb;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: auto 0 auto 1.25rem;
+}
+.globalNav .navLinks {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.globalNav .navLinks a {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.globalNav .navLinks a:not(:last-child) {
+  margin-right: 1.25rem;
+}
+.globalNav .navLinks a:hover {
+  text-decoration: underline;
+}
+.globalNav .navIcons {
+  display: none;
+  flex-direction: row;
+  margin: auto 5rem auto 0;
+}
+.globalNav .navIcons i {
+  font-size: 1.25rem;
+}
+.globalNav .navLinksResponsive {
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  margin-right: 5rem;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transform: translate(0%, 0%);
+}
+.globalNav .navLinksResponsive a {
+  color: #111827;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.globalNav .navLinksResponsive a:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+.globalNav .navLinksResponsive a:hover {
+  text-decoration: underline;
+}
+.globalNav .navLinksResponsive .regAndLogin {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: unset;
+  transform: unset;
+}
+.globalNav .navLinksResponsive .regAndLogin a {
+  text-align: center;
+  width: 100%;
+}
+.globalNav .navLinksResponsive .regAndLogin a:hover {
+  text-decoration: none;
+}
+.globalNav .regAndLoginDiv {
+  display: flex;
+  margin: auto 5rem auto 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+.globalNav .regAndLoginDiv a {
+  border-radius: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.3125rem 0.625rem;
+}
+.globalNav .regAndLoginDiv .loginBtn {
+  color: rgba(0, 0, 0, 0.6);
+  border: rgba(0, 0, 0, 0.6) solid 0.125rem;
+  margin-right: 1.25rem;
+}
+.globalNav .regAndLoginDiv .loginBtn:hover {
+  border: #111827 solid 0.125rem;
+  color: #111827;
+}
+.globalNav .regAndLoginDiv .signupBtn {
+  background-color: rgba(37, 100, 235, 0.9);
+  border: rgba(37, 100, 235, 0.8) solid 0.125rem;
+  color: #fff;
+}
+.globalNav .regAndLoginDiv .signupBtn:hover {
+  background-color: #2563eb;
+  border: #2563eb solid 0.125rem;
+  color: #fff;
+}
+
+@media (max-width: 930px) {
+  .navLinks,
+  .regAndLoginDiv {
+    display: none;
+  }
+  .navIcons {
+    display: flex;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,83 @@
+// @media (max-width: 760px) {
+// 	.contactFormAndMedia {
+// 		width: 90vw !important;
+// 	}
+// }
+
+@media (max-width: 930px) {
+	.navLinks,
+	.regAndLoginDiv {
+		display: none;
+	}
+
+	.navIcons {
+		display: flex;
+	}
+}
+
+// @media (max-width: 1070px) {
+// 	.serviceBg,
+// 	.serviceOverlay {
+// 		width: 90vw;
+// 	}
+
+// 	.locationDiv {
+// 		width: 90%;
+// 		height: 60vh;
+// 	}
+
+// 	.staffSection {
+// 		display: none;
+// 	}
+
+// 	.staffSlideShow {
+// 		display: initial;
+// 	}
+// }
+
+// @media (max-width: 1488px) {
+// 	#contact {
+// 		height: fit-content !important;
+// 	}
+
+// 	.contactFormAndMedia {
+// 		width: 50vw;
+// 		min-height: 80vh;
+// 		// margin-bottom: 1.25rem !important;
+// 	}
+
+// 	.row {
+// 		max-height: 50%;
+// 	}
+
+// 	.topRow {
+// 		.imgSection {
+// 			display: none;
+// 		}
+
+// 		.contactFormSection {
+// 			width: 100%;
+
+// 			form {
+// 				margin: 1.25rem auto;
+// 			}
+// 		}
+// 	}
+
+// 	.bottomRow {
+// 		.socialMedia {
+// 			background: linear-gradient($bg-color, $bg-color),
+// 				url(../images/alex-mihai-c-FWgYghZrVqU-unsplash.jpg);
+// 			background-position: center;
+// 			background-size: cover;
+// 			background-repeat: no-repeat;
+// 			color: $primary-color;
+// 			margin-bottom: 1.25rem;
+// 			width: 100%;
+// 		}
+
+// 		.imgSection {
+// 			display: none;
+// 		}
+// 	}
+// }
