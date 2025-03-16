@@ -5,35 +5,29 @@
 // }
 
 @media (max-width: 930px) {
-	.navLinks,
-	.regAndLoginDiv {
-		display: none;
+	.branding {
+		margin: 1.25rem auto 1.25rem 2.5rem !important;
 	}
 
 	.navIcons {
-		display: flex;
+		margin: auto 2.5rem auto 0 !important;
+	}
+
+	.navLinksResponsive {
+		margin-right: 2.5rem !important;
 	}
 }
 
-// @media (max-width: 1070px) {
-// 	.serviceBg,
-// 	.serviceOverlay {
-// 		width: 90vw;
-// 	}
+@media (max-width: 1070px) {
+	.navLinks,
+	.regAndLoginDiv {
+		display: none !important;
+	}
 
-// 	.locationDiv {
-// 		width: 90%;
-// 		height: 60vh;
-// 	}
-
-// 	.staffSection {
-// 		display: none;
-// 	}
-
-// 	.staffSlideShow {
-// 		display: initial;
-// 	}
-// }
+	.navIcons {
+		display: flex !important;
+	}
+}
 
 // @media (max-width: 1488px) {
 // 	#contact {

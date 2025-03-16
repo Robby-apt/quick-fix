@@ -1,0 +1,100 @@
+.landingHero {
+	background-color: $bg-color;
+	display: flex;
+	padding: 5rem;
+	width: 100vw;
+	overflow: hidden;
+
+	.callToAction {
+		color: $primary-color;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		width: 40%;
+
+		h1 {
+			font-size: 5rem;
+			font-weight: bolder;
+			margin-bottom: 1.25rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+			font-weight: bold;
+			margin-bottom: 1.25rem;
+		}
+
+		.ctaButtons {
+			display: flex;
+			flex-direction: row;
+
+			a {
+				border-radius: 0.625rem;
+				font-size: 1.25rem;
+				font-weight: bold;
+				padding: 0.625rem 1.25rem;
+				text-align: center;
+			}
+
+			.secondaryCTA {
+				border: $primary-color solid 0.125rem;
+				color: $primary-color;
+				margin-right: 1.25rem;
+
+				&:hover {
+					background-color: $primary-color;
+					color: $secondary-color;
+				}
+			}
+
+			.primaryCTA {
+				background-color: $primary-color;
+				border: $bg-color solid 0.125rem;
+				color: $bg-color;
+
+				&:hover {
+					background-color: $accent-color;
+					border: $accent-color solid 0.125rem;
+					color: $primary-color;
+				}
+			}
+		}
+	}
+
+	.heroImg {
+		width: 60%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			border-radius: 1.25rem;
+			margin: auto 0 auto auto;
+			width: 90%;
+		}
+	}
+}
+
+// .workingsSection {
+
+// }
+
+.serviceMiniSection {
+	background-color: $backup-color;
+
+	a {
+		background-color: $primary-color;
+		border: $inactive-color solid 0.0625rem;
+		border-radius: 0.625rem;
+		font-weight: bold;
+		margin: 0 auto;
+		padding: 0.625rem 1.25rem;
+		text-align: center;
+
+		&:hover {
+			background-color: $secondary-color;
+			border: $secondary-color solid 0.0625rem;
+			color: $primary-color;
+		}
+	}
+}

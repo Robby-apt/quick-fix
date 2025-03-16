@@ -19,7 +19,6 @@ a {
 
 .globalNav {
   background-color: #fff;
-  border-bottom: #111827 solid 0.125rem;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -43,8 +42,8 @@ a {
 }
 .globalNav .branding a h1 {
   color: #2563eb;
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: bolder;
   margin: auto 0 auto 1.25rem;
 }
 .globalNav .navLinks {
@@ -73,7 +72,7 @@ a {
   margin: auto 5rem auto 0;
 }
 .globalNav .navIcons i {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 .globalNav .navLinksResponsive {
   background-color: #fff;
@@ -104,11 +103,34 @@ a {
   transform: unset;
 }
 .globalNav .navLinksResponsive .regAndLogin a {
+  border-radius: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.3125rem 0.625rem;
   text-align: center;
   width: 100%;
 }
 .globalNav .navLinksResponsive .regAndLogin a:hover {
   text-decoration: none;
+}
+.globalNav .navLinksResponsive .regAndLogin .loginBtn {
+  color: rgba(0, 0, 0, 0.6);
+  border: rgba(0, 0, 0, 0.6) solid 0.125rem;
+  margin-right: 1.25rem;
+}
+.globalNav .navLinksResponsive .regAndLogin .loginBtn:hover {
+  border: #111827 solid 0.125rem;
+  color: #111827;
+}
+.globalNav .navLinksResponsive .regAndLogin .signupBtn {
+  background-color: rgba(37, 100, 235, 0.9);
+  border: rgba(37, 100, 235, 0.8) solid 0.125rem;
+  color: #fff;
+}
+.globalNav .navLinksResponsive .regAndLogin .signupBtn:hover {
+  background-color: #2563eb;
+  border: #2563eb solid 0.125rem;
+  color: #fff;
 }
 .globalNav .regAndLoginDiv {
   display: flex;
@@ -144,12 +166,175 @@ a {
   color: #fff;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+.section h2 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.section h3 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.cardDisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+.cardDisplay .card {
+  background-color: #fff;
+  border: rgba(0, 0, 0, 0.6) solid 0.0625rem;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  width: 30%;
+}
+.cardDisplay .card i {
+  color: #2563eb;
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+.cardDisplay .card h4 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+.cardDisplay .card p {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.reviewCard {
+  background-color: #fff;
+  border: rgba(0, 0, 0, 0.6) solid 0.0625rem;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  width: 30%;
+}
+.reviewCard .customerInfo {
+  border-top: rgba(0, 0, 0, 0.6) solid 0.0625rem;
+  display: flex;
+  margin-top: 1.25rem;
+}
+
+.landingHero {
+  background-color: #2563eb;
+  display: flex;
+  padding: 5rem;
+  width: 100vw;
+  overflow: hidden;
+}
+.landingHero .callToAction {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 40%;
+}
+.landingHero .callToAction h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  margin-bottom: 1.25rem;
+}
+.landingHero .callToAction p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+.landingHero .callToAction .ctaButtons {
+  display: flex;
+  flex-direction: row;
+}
+.landingHero .callToAction .ctaButtons a {
+  border-radius: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+}
+.landingHero .callToAction .ctaButtons .secondaryCTA {
+  border: #fff solid 0.125rem;
+  color: #fff;
+  margin-right: 1.25rem;
+}
+.landingHero .callToAction .ctaButtons .secondaryCTA:hover {
+  background-color: #fff;
+  color: #000;
+}
+.landingHero .callToAction .ctaButtons .primaryCTA {
+  background-color: #fff;
+  border: #2563eb solid 0.125rem;
+  color: #2563eb;
+}
+.landingHero .callToAction .ctaButtons .primaryCTA:hover {
+  background-color: #111827;
+  border: #111827 solid 0.125rem;
+  color: #fff;
+}
+.landingHero .heroImg {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landingHero .heroImg img {
+  border-radius: 1.25rem;
+  margin: auto 0 auto auto;
+  width: 90%;
+}
+
+.serviceMiniSection {
+  background-color: #f8fafc;
+}
+.serviceMiniSection a {
+  background-color: #fff;
+  border: rgba(0, 0, 0, 0.6) solid 0.0625rem;
+  border-radius: 0.625rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+}
+.serviceMiniSection a:hover {
+  background-color: #000;
+  border: #000 solid 0.0625rem;
+  color: #fff;
+}
+
 @media (max-width: 930px) {
-  .navLinks,
-  .regAndLoginDiv {
-    display: none;
+  .branding {
+    margin: 1.25rem auto 1.25rem 2.5rem !important;
   }
   .navIcons {
-    display: flex;
+    margin: auto 2.5rem auto 0 !important;
+  }
+  .navLinksResponsive {
+    margin-right: 2.5rem !important;
+  }
+}
+@media (max-width: 1070px) {
+  .navLinks,
+  .regAndLoginDiv {
+    display: none !important;
+  }
+  .navIcons {
+    display: flex !important;
   }
 }/*# sourceMappingURL=style.css.map */
