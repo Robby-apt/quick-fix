@@ -1,0 +1,98 @@
+.globalFooter {
+	background-color: $accent-color;
+	color: $primary-color;
+	display: flex;
+	flex-direction: column;
+	padding: 5rem 5rem 0 5rem;
+
+	.columnDisplay {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.footerCol {
+			// background-color: blueviolet;
+			display: flex;
+			flex-direction: column;
+			padding: 0;
+			width: 20%;
+
+			h4 {
+				font-size: 1.5rem;
+				font-weight: bold;
+				margin-bottom: 1.25rem;
+				// text-align: center;
+			}
+
+			.subCol {
+				display: flex;
+				flex-direction: column;
+
+				p,
+				a {
+					color: $primary-color;
+
+					&:not(:last-child) {
+						margin-bottom: 0.625rem;
+					}
+				}
+
+				a {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+
+			.socialMediaIcons {
+				// background-color: brown;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				margin: 0 auto 0 0;
+				min-width: 50%;
+				height: fit-content;
+
+				a {
+					color: $primary-color;
+					margin: 0;
+
+					&:hover {
+						color: $bg-color;
+					}
+
+					i {
+						font-size: 1.5rem;
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.socialsCol {
+			.brandingFooter {
+				margin: 0 0 1.25rem 0;
+
+				a {
+					img {
+						width: 2rem;
+						height: 2rem;
+					}
+
+					h1 {
+						font-size: 1.5rem;
+						font-weight: bolder;
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		// background-color: aqua;
+		border-top: 0.0625rem solid rgba(255, 255, 255, 0.2);
+		display: flex;
+		padding: 0.625rem 0;
+		justify-content: center;
+	}
+}

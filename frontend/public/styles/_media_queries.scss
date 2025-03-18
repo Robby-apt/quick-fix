@@ -16,6 +16,71 @@
 	.navLinksResponsive {
 		margin-right: 2.5rem !important;
 	}
+
+	.landingHero {
+		.heroImg {
+			// background-color: aqua;
+			width: 100% !important;
+			padding: 0 !important;
+			height: max-content;
+
+			img {
+				margin: 0;
+				width: 100% !important;
+			}
+		}
+	}
+
+	.section {
+		padding: 2.5rem;
+	}
+
+	.ctaButtons {
+		// background-color: aqua;
+		flex-direction: column;
+
+		a {
+			text-align: center;
+			width: 100%;
+
+			&:not(:last-child) {
+				margin-bottom: 1.25rem;
+			}
+		}
+	}
+
+	.cardDisplay {
+		flex-direction: column;
+
+		.card {
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+
+			&:not(:last-child) {
+				margin-bottom: 1.25rem;
+			}
+		}
+	}
+
+	.reviewDisplay {
+		.reviewCard {
+			width: 80% !important;
+		}
+	}
+
+	.globalFooter {
+		.columnDisplay {
+			.footerCol {
+				// background-color: aqua;
+				width: 80% !important;
+
+				.socialMediaIcons {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 1070px) {
@@ -27,51 +92,102 @@
 	.navIcons {
 		display: flex !important;
 	}
+
+	.landingHero {
+		.callToAction {
+			// background-color: aquamarine;
+			width: 80% !important;
+
+			h1 {
+				font-size: 3rem;
+			}
+		}
+
+		.heroImg {
+			img {
+				width: 100% !important;
+			}
+		}
+	}
+
+	.reviewDisplay {
+		flex-direction: column;
+
+		.reviewCard {
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+
+			&:not(:last-child) {
+				margin-bottom: 1.25rem;
+			}
+		}
+	}
+
+	.globalFooter {
+		.columnDisplay {
+			flex-direction: column;
+
+			.footerCol {
+				// background-color: aqua;
+				text-align: center;
+				margin: 0 auto 1.25rem auto;
+				width: 50%;
+
+				&:not(:last-child) {
+					border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.2);
+					padding-bottom: 1.25rem;
+				}
+
+				.branding,
+				.socialMediaIcons {
+					margin-left: auto !important;
+					margin-right: auto !important;
+				}
+			}
+		}
+	}
 }
 
-// @media (max-width: 1488px) {
-// 	#contact {
-// 		height: fit-content !important;
-// 	}
+@media (max-width: 1280px) {
+	.landingHero {
+		padding: 5rem 2.5rem;
 
-// 	.contactFormAndMedia {
-// 		width: 50vw;
-// 		min-height: 80vh;
-// 		// margin-bottom: 1.25rem !important;
-// 	}
+		.callToAction {
+			// background-color: aquamarine;
+			width: 60%;
 
-// 	.row {
-// 		max-height: 50%;
-// 	}
+			h1 {
+				font-size: 3rem;
+			}
+		}
 
-// 	.topRow {
-// 		.imgSection {
-// 			display: none;
-// 		}
+		.heroImg {
+			img {
+				width: 80%;
+			}
+		}
+	}
+}
 
-// 		.contactFormSection {
-// 			width: 100%;
+@media (max-width: 1488px) {
+	.landingHero {
+		flex-direction: column;
 
-// 			form {
-// 				margin: 1.25rem auto;
-// 			}
-// 		}
-// 	}
+		.heroSection {
+			width: 100%;
+			padding: 0 5rem;
+		}
 
-// 	.bottomRow {
-// 		.socialMedia {
-// 			background: linear-gradient($bg-color, $bg-color),
-// 				url(../images/alex-mihai-c-FWgYghZrVqU-unsplash.jpg);
-// 			background-position: center;
-// 			background-size: cover;
-// 			background-repeat: no-repeat;
-// 			color: $primary-color;
-// 			margin-bottom: 1.25rem;
-// 			width: 100%;
-// 		}
+		.callToAction {
+			margin: 0 auto 2.5rem auto;
+		}
 
-// 		.imgSection {
-// 			display: none;
-// 		}
-// 	}
-// }
+		.heroImg {
+			img {
+				margin: auto;
+				width: 70%;
+			}
+		}
+	}
+}

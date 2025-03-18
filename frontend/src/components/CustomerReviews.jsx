@@ -12,11 +12,12 @@ function CustomerReviews() {
 				about Quick Fix.
 			</h3>
 
-			<div className="cardDisplay">
+			<div className="cardDisplay reviewDisplay">
 				{customerCard.map((card, index) => {
 					return (
 						<ReviewCard
 							key={index}
+							stars={card.stars}
 							review={card.review}
 							imgSrc={card.imgSrc}
 							name={card.name}

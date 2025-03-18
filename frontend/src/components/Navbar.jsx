@@ -1,19 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import logo from '../../public/images/quick-fix.svg';
+import Branding from './Branding';
 
 function Navbar(props) {
 	return (
 		<nav className="globalNav">
-			<div className="branding">
-				<Link to="/">
-					<img
-						src={`${process.env.PUBLIC_URL}/images/quick-fix.svg`}
-						alt="Quick Fix logo"
-					/>
-					<h1>Quick Fix</h1>
-				</Link>
-			</div>
+			<Branding/>
 
 			<div className="navLinks">
 				<Link to="/">Home</Link>

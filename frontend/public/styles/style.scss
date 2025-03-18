@@ -53,6 +53,48 @@ a {
 	}
 }
 
+// ---- Call to action buttons styling ----
+.ctaButtons {
+	display: flex;
+	flex-direction: row;
+
+	a {
+		border-radius: 0.625rem;
+		font-size: 1.25rem;
+		font-weight: bold;
+		padding: 0.625rem 1.25rem;
+		text-align: center;
+	}
+
+	.secondaryCTA {
+		border: $primary-color solid 0.125rem;
+		color: $primary-color;
+		margin-right: 1.25rem;
+
+		&:hover {
+			background-color: $primary-color;
+			color: $secondary-color;
+		}
+	}
+
+	.primaryCTA {
+		background-color: $primary-color;
+		border: $bg-color solid 0.125rem;
+		color: $bg-color;
+
+		&:hover {
+			background-color: $accent-color;
+			border: $accent-color solid 0.125rem;
+			color: $primary-color;
+		}
+	}
+}
+// ---- End Call to action buttons styling ----
+
+// ---- Footer styling ----
+@import './_footer';
+// ---- End Footer styling ----
+
 // ---- Card styling ----
 @import './_card';
 // ---- End Card styling ----

@@ -49,10 +49,56 @@
 	padding: 1.25rem;
 	width: 30%;
 
+	.starsDisplay {
+		// background-color: crimson;
+		display: flex;
+		margin-bottom: 1.25rem;
+
+		i {
+			color: #ecb91d;
+			font-size: 1.25rem;
+
+			&:not(:last-child) {
+				margin-right: 0.3125rem;
+			}
+		}
+	}
+
 	.customerInfo {
+		// background-color: crimson;
 		border-top: $inactive-color solid 0.0625rem;
 		display: flex;
 		margin-top: 1.25rem;
+		padding: 1.25rem 0;
+
+		img {
+			// border: $bg-color solid 0.0625rem;
+			border-radius: 50%;
+			margin: auto 2.5rem auto 0;
+			object-fit: cover;
+			object-position: top;
+			text-align: center;
+			height: 5rem;
+			width: 5rem;
+		}
+
+		.nameAndPosition {
+			// background-color: aqua;
+			display: flex;
+			flex-direction: column;
+			margin: auto 0 !important;
+
+			h4 {
+				font-size: 1.25rem;
+				font-weight: bolder;
+				margin-bottom: 0.625rem;
+			}
+
+			p {
+				color: $inactive-color;
+				font-size: 1rem;
+			}
+		}
 	}
 }
 

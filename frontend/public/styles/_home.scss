@@ -23,42 +23,6 @@
 			font-weight: bold;
 			margin-bottom: 1.25rem;
 		}
-
-		.ctaButtons {
-			display: flex;
-			flex-direction: row;
-
-			a {
-				border-radius: 0.625rem;
-				font-size: 1.25rem;
-				font-weight: bold;
-				padding: 0.625rem 1.25rem;
-				text-align: center;
-			}
-
-			.secondaryCTA {
-				border: $primary-color solid 0.125rem;
-				color: $primary-color;
-				margin-right: 1.25rem;
-
-				&:hover {
-					background-color: $primary-color;
-					color: $secondary-color;
-				}
-			}
-
-			.primaryCTA {
-				background-color: $primary-color;
-				border: $bg-color solid 0.125rem;
-				color: $bg-color;
-
-				&:hover {
-					background-color: $accent-color;
-					border: $accent-color solid 0.125rem;
-					color: $primary-color;
-				}
-			}
-		}
 	}
 
 	.heroImg {
@@ -71,6 +35,7 @@
 			border-radius: 1.25rem;
 			margin: auto 0 auto auto;
 			width: 90%;
+			min-width: 360px;
 		}
 	}
 }
@@ -96,5 +61,18 @@
 			border: $secondary-color solid 0.0625rem;
 			color: $primary-color;
 		}
+	}
+}
+
+.getStarted {
+	background-color: $bg-color;
+
+	h2,
+	h3 {
+		color: $primary-color;
+	}
+
+	div {
+		margin: 1.25rem auto 0 auto;
 	}
 }

@@ -4,7 +4,7 @@ import CtaButtons from './CtaButtons';
 function Hero(props) {
 	return (
 		<div
-			className="landingHero"
+			className="landingHero heroSection"
 			onClick={() => props.setResNavShowing(false)}
 		>
 			<div className="callToAction">
@@ -18,7 +18,7 @@ function Hero(props) {
 				<CtaButtons />
 			</div>
 
-			<div className="heroImg">
+			<div className="heroImg heroSection">
 				<img
 					src={`${process.env.PUBLIC_URL}/images/hero-img.jpg`}
 					alt="Repair specialist at work"

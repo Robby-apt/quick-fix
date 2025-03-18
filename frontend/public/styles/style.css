@@ -23,29 +23,6 @@ a {
   flex-direction: row;
   position: relative;
 }
-.globalNav .branding {
-  display: flex;
-  margin: 1.25rem auto 1.25rem 5rem;
-}
-.globalNav .branding a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: none;
-  padding: none;
-}
-.globalNav .branding a img {
-  margin: 0;
-  padding: 0;
-  width: 3.125rem;
-  height: 3.125rem;
-}
-.globalNav .branding a h1 {
-  color: #2563eb;
-  font-size: 2rem;
-  font-weight: bolder;
-  margin: auto 0 auto 1.25rem;
-}
 .globalNav .navLinks {
   display: flex;
   flex-direction: row;
@@ -166,6 +143,30 @@ a {
   color: #fff;
 }
 
+.branding {
+  display: flex;
+  margin: 1.25rem auto 1.25rem 5rem;
+}
+.branding a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: none;
+  padding: none;
+}
+.branding a img {
+  margin: 0;
+  padding: 0;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.branding a h1 {
+  color: #2563eb;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: auto 0 auto 1.25rem;
+}
+
 .section {
   display: flex;
   flex-direction: column;
@@ -183,6 +184,113 @@ a {
   font-weight: bold;
   text-align: center;
   margin-bottom: 2.5rem;
+}
+
+.ctaButtons {
+  display: flex;
+  flex-direction: row;
+}
+.ctaButtons a {
+  border-radius: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+}
+.ctaButtons .secondaryCTA {
+  border: #fff solid 0.125rem;
+  color: #fff;
+  margin-right: 1.25rem;
+}
+.ctaButtons .secondaryCTA:hover {
+  background-color: #fff;
+  color: #000;
+}
+.ctaButtons .primaryCTA {
+  background-color: #fff;
+  border: #2563eb solid 0.125rem;
+  color: #2563eb;
+}
+.ctaButtons .primaryCTA:hover {
+  background-color: #111827;
+  border: #111827 solid 0.125rem;
+  color: #fff;
+}
+
+.globalFooter {
+  background-color: #111827;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 5rem 0 5rem;
+}
+.globalFooter .columnDisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.globalFooter .columnDisplay .footerCol {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 20%;
+}
+.globalFooter .columnDisplay .footerCol h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+.globalFooter .columnDisplay .footerCol .subCol {
+  display: flex;
+  flex-direction: column;
+}
+.globalFooter .columnDisplay .footerCol .subCol p,
+.globalFooter .columnDisplay .footerCol .subCol a {
+  color: #fff;
+}
+.globalFooter .columnDisplay .footerCol .subCol p:not(:last-child),
+.globalFooter .columnDisplay .footerCol .subCol a:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+.globalFooter .columnDisplay .footerCol .subCol a:hover {
+  text-decoration: underline;
+}
+.globalFooter .columnDisplay .footerCol .socialMediaIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto 0 0;
+  min-width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.globalFooter .columnDisplay .footerCol .socialMediaIcons a {
+  color: #fff;
+  margin: 0;
+}
+.globalFooter .columnDisplay .footerCol .socialMediaIcons a:hover {
+  color: #2563eb;
+}
+.globalFooter .columnDisplay .footerCol .socialMediaIcons a i {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.globalFooter .columnDisplay .socialsCol .brandingFooter {
+  margin: 0 0 1.25rem 0;
+}
+.globalFooter .columnDisplay .socialsCol .brandingFooter a img {
+  width: 2rem;
+  height: 2rem;
+}
+.globalFooter .columnDisplay .socialsCol .brandingFooter a h1 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.globalFooter .copyright {
+  border-top: 0.0625rem solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  padding: 0.625rem 0;
+  justify-content: center;
 }
 
 .cardDisplay {
@@ -228,10 +336,47 @@ a {
   padding: 1.25rem;
   width: 30%;
 }
+.reviewCard .starsDisplay {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+.reviewCard .starsDisplay i {
+  color: #ecb91d;
+  font-size: 1.25rem;
+}
+.reviewCard .starsDisplay i:not(:last-child) {
+  margin-right: 0.3125rem;
+}
 .reviewCard .customerInfo {
   border-top: rgba(0, 0, 0, 0.6) solid 0.0625rem;
   display: flex;
   margin-top: 1.25rem;
+  padding: 1.25rem 0;
+}
+.reviewCard .customerInfo img {
+  border-radius: 50%;
+  margin: auto 2.5rem auto 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  text-align: center;
+  height: 5rem;
+  width: 5rem;
+}
+.reviewCard .customerInfo .nameAndPosition {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 !important;
+}
+.reviewCard .customerInfo .nameAndPosition h4 {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  margin-bottom: 0.625rem;
+}
+.reviewCard .customerInfo .nameAndPosition p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
 }
 
 .landingHero {
@@ -258,36 +403,6 @@ a {
   font-weight: bold;
   margin-bottom: 1.25rem;
 }
-.landingHero .callToAction .ctaButtons {
-  display: flex;
-  flex-direction: row;
-}
-.landingHero .callToAction .ctaButtons a {
-  border-radius: 0.625rem;
-  font-size: 1.25rem;
-  font-weight: bold;
-  padding: 0.625rem 1.25rem;
-  text-align: center;
-}
-.landingHero .callToAction .ctaButtons .secondaryCTA {
-  border: #fff solid 0.125rem;
-  color: #fff;
-  margin-right: 1.25rem;
-}
-.landingHero .callToAction .ctaButtons .secondaryCTA:hover {
-  background-color: #fff;
-  color: #000;
-}
-.landingHero .callToAction .ctaButtons .primaryCTA {
-  background-color: #fff;
-  border: #2563eb solid 0.125rem;
-  color: #2563eb;
-}
-.landingHero .callToAction .ctaButtons .primaryCTA:hover {
-  background-color: #111827;
-  border: #111827 solid 0.125rem;
-  color: #fff;
-}
 .landingHero .heroImg {
   width: 60%;
   display: flex;
@@ -298,6 +413,7 @@ a {
   border-radius: 1.25rem;
   margin: auto 0 auto auto;
   width: 90%;
+  min-width: 360px;
 }
 
 .serviceMiniSection {
@@ -318,6 +434,17 @@ a {
   color: #fff;
 }
 
+.getStarted {
+  background-color: #2563eb;
+}
+.getStarted h2,
+.getStarted h3 {
+  color: #fff;
+}
+.getStarted div {
+  margin: 1.25rem auto 0 auto;
+}
+
 @media (max-width: 930px) {
   .branding {
     margin: 1.25rem auto 1.25rem 2.5rem !important;
@@ -328,6 +455,49 @@ a {
   .navLinksResponsive {
     margin-right: 2.5rem !important;
   }
+  .landingHero .heroImg {
+    width: 100% !important;
+    padding: 0 !important;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .landingHero .heroImg img {
+    margin: 0;
+    width: 100% !important;
+  }
+  .section {
+    padding: 2.5rem;
+  }
+  .ctaButtons {
+    flex-direction: column;
+  }
+  .ctaButtons a {
+    text-align: center;
+    width: 100%;
+  }
+  .ctaButtons a:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+  .cardDisplay {
+    flex-direction: column;
+  }
+  .cardDisplay .card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .cardDisplay .card:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+  .reviewDisplay .reviewCard {
+    width: 80% !important;
+  }
+  .globalFooter .columnDisplay .footerCol {
+    width: 80% !important;
+  }
+  .globalFooter .columnDisplay .footerCol .socialMediaIcons {
+    width: 100%;
+  }
 }
 @media (max-width: 1070px) {
   .navLinks,
@@ -336,5 +506,72 @@ a {
   }
   .navIcons {
     display: flex !important;
+  }
+  .landingHero .callToAction {
+    width: 80% !important;
+  }
+  .landingHero .callToAction h1 {
+    font-size: 3rem;
+  }
+  .landingHero .heroImg img {
+    width: 100% !important;
+  }
+  .reviewDisplay {
+    flex-direction: column;
+  }
+  .reviewDisplay .reviewCard {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .reviewDisplay .reviewCard:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+  .globalFooter .columnDisplay {
+    flex-direction: column;
+  }
+  .globalFooter .columnDisplay .footerCol {
+    text-align: center;
+    margin: 0 auto 1.25rem auto;
+    width: 50%;
+  }
+  .globalFooter .columnDisplay .footerCol:not(:last-child) {
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 1.25rem;
+  }
+  .globalFooter .columnDisplay .footerCol .branding,
+  .globalFooter .columnDisplay .footerCol .socialMediaIcons {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media (max-width: 1280px) {
+  .landingHero {
+    padding: 5rem 2.5rem;
+  }
+  .landingHero .callToAction {
+    width: 60%;
+  }
+  .landingHero .callToAction h1 {
+    font-size: 3rem;
+  }
+  .landingHero .heroImg img {
+    width: 80%;
+  }
+}
+@media (max-width: 1488px) {
+  .landingHero {
+    flex-direction: column;
+  }
+  .landingHero .heroSection {
+    width: 100%;
+    padding: 0 5rem;
+  }
+  .landingHero .callToAction {
+    margin: 0 auto 2.5rem auto;
+  }
+  .landingHero .heroImg img {
+    margin: auto;
+    width: 70%;
   }
 }/*# sourceMappingURL=style.css.map */
