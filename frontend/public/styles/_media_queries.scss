@@ -89,6 +89,14 @@
 			width: 80%;
 		}
 	}
+
+	.servicesDisplay {
+		// background-color: aqua;
+		grid-template-columns: repeat(1, 100%) !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		width: 80%;
+	}
 }
 
 @media (max-width: 1070px) {
@@ -175,6 +183,10 @@
 				width: 80%;
 			}
 		}
+	}
+
+	.servicesDisplay {
+		grid-template-columns: repeat(2, 40%);
 	}
 }
 

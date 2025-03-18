@@ -3,7 +3,9 @@ import React from 'react';
 function Card(props) {
 	return (
 		<div className="card">
-			<i className={props.iconClass} />
+			<div className="iconBg">
+				<i className={props.iconClass} />
+			</div>
 			<h4 className="cardTitle">{props.title}</h4>
 			<p>{props.description}</p>
 		</div>

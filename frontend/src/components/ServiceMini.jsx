@@ -6,7 +6,7 @@ import serviceMini from '../service-mini';
 function ServiceMini() {
 	return (
 		<div className="section serviceMiniSection">
-			<h2 className="sectionTitle">How QuickFix Works</h2>
+			<h2 className="sectionTitle">Our Services</h2>
 
 			<h3 className="sectionSubtitle">
 				QuickFix connects you with skilled professionals for all your

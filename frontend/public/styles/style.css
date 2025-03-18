@@ -300,6 +300,21 @@ a {
   justify-content: center;
 }
 
+.iconBg {
+  background-color: #e9effd;
+  border-radius: 50%;
+  display: flex;
+  margin: auto auto 1.25rem auto;
+  width: 5rem;
+  height: 5rem;
+}
+.iconBg i {
+  color: #2563eb;
+  font-size: 3rem;
+  margin: auto;
+  text-align: center;
+}
+
 .cardDisplay {
   display: flex;
   flex-direction: row;
@@ -315,12 +330,7 @@ a {
   flex-direction: column;
   padding: 1.25rem;
   width: 30%;
-}
-.cardDisplay .card i {
-  color: #2563eb;
-  font-size: 3rem;
-  margin-bottom: 1.25rem;
-  text-align: center;
+  min-width: 390px;
 }
 .cardDisplay .card h4 {
   font-size: 1.5rem;
@@ -342,10 +352,13 @@ a {
   flex-direction: column;
   padding: 1.25rem;
   width: 30%;
+  min-width: 390px;
 }
 .reviewCard .starsDisplay {
+  border-bottom: rgba(0, 0, 0, 0.6) dotted 0.0625rem;
   display: flex;
   margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .reviewCard .starsDisplay i {
   color: #ecb91d;
@@ -492,6 +505,59 @@ a {
   margin: 0;
 }
 
+.servicesDisplay {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 2.5rem 0;
+  justify-content: space-between;
+}
+.servicesDisplay .serviceItem {
+  align-items: center;
+  background-color: #fff;
+  border: rgba(0, 0, 0, 0.6) solid 0.0125rem;
+  border-radius: 0.625rem !important;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+.servicesDisplay .serviceItem h4 {
+  font-weight: bolder;
+  margin-bottom: 1.25rem;
+}
+.servicesDisplay .serviceItem h6 {
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+.servicesDisplay .serviceItem .jobList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.servicesDisplay .serviceItem .jobList .jobItem {
+  display: flex;
+}
+.servicesDisplay .serviceItem .jobList .jobItem:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+.servicesDisplay .serviceItem .jobList .jobItem i {
+  color: #2563eb;
+  font-size: 1.25rem;
+  margin: auto 0;
+}
+.servicesDisplay .serviceItem .jobList .jobItem p {
+  margin: auto auto auto 0.625rem;
+}
+
+.serviceStat {
+  background-color: #fff;
+}
+.serviceStat .landingStatComp i,
+.serviceStat .landingStatComp h4,
+.serviceStat .landingStatComp p {
+  color: #000;
+}
+
 @media (max-width: 930px) {
   .branding {
     margin: 1.25rem auto 1.25rem 2.5rem !important;
@@ -549,6 +615,12 @@ a {
     flex-direction: column !important;
   }
   .landingStats .landingStatComp {
+    width: 80%;
+  }
+  .servicesDisplay {
+    grid-template-columns: repeat(1, 100%) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     width: 80%;
   }
 }
@@ -610,6 +682,9 @@ a {
   }
   .landingHero .heroImg img {
     width: 80%;
+  }
+  .servicesDisplay {
+    grid-template-columns: repeat(2, 40%);
   }
 }
 @media (max-width: 1488px) {

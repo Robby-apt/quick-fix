@@ -4,7 +4,7 @@ import landingStats from '../landingStats';
 
 function LandingStats() {
 	return (
-		<div className="section getStarted landingStats">
+		<div className="section getStarted landingStats serviceStat">
 			{landingStats.map((stat, index) => (
 				<LandingStatComp
 					key={index}

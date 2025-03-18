@@ -1,0 +1,65 @@
+.servicesDisplay {
+	display: grid;
+	grid-template-columns: repeat(3, 30%);
+	gap: 2.5rem 0;
+	justify-content: space-between;
+
+	.serviceItem {
+		align-items: center;
+		background-color: $primary-color;
+		border: $inactive-color solid 0.0125rem;
+		border-radius: 0.625rem !important;
+		display: flex;
+		flex-direction: column;
+		padding: 1.25rem;
+
+		h4 {
+			font-weight: bolder;
+			margin-bottom: 1.25rem;
+		}
+
+		h6 {
+			color: $inactive-color;
+			margin-bottom: 1.25rem;
+			text-align: center;
+		}
+
+		.jobList {
+			// background-color: aqua;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+
+			.jobItem {
+				// background-color: burlywood;
+				display: flex;
+
+				&:not(:last-child) {
+					margin-bottom: 1.25rem;
+				}
+
+				i {
+					color: $bg-color;
+					font-size: 1.25rem;
+					margin: auto 0;
+				}
+
+				p {
+					margin: auto auto auto 0.625rem;
+				}
+			}
+		}
+	}
+}
+
+.serviceStat {
+	background-color: $primary-color;
+
+	.landingStatComp {
+		i,
+		h4,
+		p {
+			color: $secondary-color;
+		}
+	}
+}
