@@ -1,0 +1,54 @@
+.page {
+	.quickfixAbout {
+		.sectionSubtitle {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	.ourStory {
+		background-color: $primary-color;
+		// height: max-content;
+
+		.callToAction {
+			color: $secondary-color;
+
+			h2 {
+				font-size: 2.5rem;
+				font-weight: bolder;
+			}
+
+			p {
+				font-size: 1rem;
+				font-weight: normal;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.landingStats {
+		display: flex;
+		flex-direction: row;
+
+		.landingStatComp {
+			// background-color: brown;
+			color: $primary-color;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			i {
+				font-size: 2.5rem;
+				margin-bottom: 1.25rem;
+			}
+
+			h4 {
+				font-weight: bolder;
+				margin-bottom: 1.25rem;
+			}
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+}

@@ -9,7 +9,7 @@ function GetStarted() {
 			<h3 className="sectionSubtitle">
 				Join thousands of satisfied customers who have found reliable
 				<br />
-				handymen through Quick Fix.
+				handymen through QuickFix.
 			</h3>
 
 			<CtaButtons />

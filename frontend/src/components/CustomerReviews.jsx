@@ -9,7 +9,7 @@ function CustomerReviews() {
 
 			<h3 className="sectionSubtitle">
 				Don't just take our word for it. Here's what people are saying
-				about Quick Fix.
+				about QuickFix.
 			</h3>
 
 			<div className="cardDisplay reviewDisplay">

@@ -7,9 +7,9 @@ function Branding() {
 			<Link to="/">
 				<img
 					src={`${process.env.PUBLIC_URL}/images/quick-fix.svg`}
-					alt="Quick Fix logo"
+					alt="QuickFix logo"
 				/>
-				<h1>Quick Fix</h1>
+				<h1>QuickFix</h1>
 			</Link>
 		</div>
 	);

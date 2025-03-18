@@ -6,10 +6,10 @@ import serviceMini from '../service-mini';
 function ServiceMini() {
 	return (
 		<div className="section serviceMiniSection">
-			<h2 className="sectionTitle">How Quick Fix Works</h2>
+			<h2 className="sectionTitle">How QuickFix Works</h2>
 
 			<h3 className="sectionSubtitle">
-				Quick Fix connects you with skilled professionals for all your
+				QuickFix connects you with skilled professionals for all your
 				home repair and maintenance needs.
 			</h3>
 

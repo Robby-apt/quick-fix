@@ -17,6 +17,12 @@ a {
   text-decoration: none;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .globalNav {
   background-color: #fff;
   display: flex;
@@ -222,6 +228,7 @@ a {
   color: #fff;
   display: flex;
   flex-direction: column;
+  margin-top: auto;
   padding: 5rem 5rem 0 5rem;
 }
 .globalFooter .columnDisplay {
@@ -445,6 +452,46 @@ a {
   margin: 1.25rem auto 0 auto;
 }
 
+.page .quickfixAbout .sectionSubtitle {
+  margin-bottom: 0 !important;
+}
+.page .ourStory {
+  background-color: #fff;
+}
+.page .ourStory .callToAction {
+  color: #000;
+}
+.page .ourStory .callToAction h2 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.page .ourStory .callToAction p {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.page .landingStats {
+  display: flex;
+  flex-direction: row;
+}
+.page .landingStats .landingStatComp {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page .landingStats .landingStatComp i {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+.page .landingStats .landingStatComp h4 {
+  font-weight: bolder;
+  margin-bottom: 1.25rem;
+}
+.page .landingStats .landingStatComp p {
+  margin: 0;
+}
+
 @media (max-width: 930px) {
   .branding {
     margin: 1.25rem auto 1.25rem 2.5rem !important;
@@ -497,6 +544,12 @@ a {
   }
   .globalFooter .columnDisplay .footerCol .socialMediaIcons {
     width: 100%;
+  }
+  .landingStats {
+    flex-direction: column !important;
+  }
+  .landingStats .landingStatComp {
+    width: 80%;
   }
 }
 @media (max-width: 1070px) {

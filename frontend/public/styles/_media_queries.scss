@@ -81,6 +81,14 @@
 			}
 		}
 	}
+
+	.landingStats {
+		flex-direction: column !important;
+
+		.landingStatComp {
+			width: 80%;
+		}
+	}
 }
 
 @media (max-width: 1070px) {

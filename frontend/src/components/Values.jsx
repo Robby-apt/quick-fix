@@ -1,14 +1,14 @@
-import React from 'react';
+import React from 'react'
 import Card from './Card';
-import qfWorking from '../qf-working';
+import ourValues from '../our-values';
 
-function Workings() {
-	return (
+function Values() {
+  return (
 		<div className="section workingsSection">
 			<h2 className="sectionTitle">How QuickFix Works</h2>
 
 			<div className="cardDisplay">
-				{qfWorking.map((working, index) => (
+				{ourValues.map((working, index) => (
 					<Card
 						key={index}
 						iconClass={working.iconClass}
@@ -18,7 +18,7 @@ function Workings() {
 				))}
 			</div>
 		</div>
-	);
+  );
 }
 
-export default Workings;
+export default Values

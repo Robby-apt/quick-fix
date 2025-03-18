@@ -21,7 +21,7 @@ function Footer() {
 			</div>
 
 			<div className="copyright">
-				&#169; {year} Quick Fix. All rights reserved.
+				&#169; {year} QuickFix. All rights reserved.
 			</div>
 		</footer>
 	);

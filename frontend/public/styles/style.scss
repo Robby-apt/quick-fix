@@ -28,6 +28,12 @@ a {
 	text-decoration: none;
 }
 
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 // ---- Navbar styling ----
 @import './_global-navbar';
 // ---- End Navbar styling ----
