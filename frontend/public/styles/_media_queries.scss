@@ -97,6 +97,18 @@
 		margin-right: auto !important;
 		width: 80%;
 	}
+
+	.nameAndEmail {
+		flex-direction: column;
+
+		div {
+			width: 100% !important;
+		}
+	}
+
+	.qaDiv {
+		grid-template-columns: repeat(1, 100%);
+	}
 }
 
 @media (max-width: 1070px) {
@@ -161,6 +173,22 @@
 					margin-right: auto !important;
 				}
 			}
+		}
+	}
+
+	.contactFormAndInfo {
+		flex-direction: column;
+
+		.contactDiv {
+			width: 100%;
+
+			h3 {
+				text-align: center;
+			}
+		}
+
+		.contactInfo {
+			padding: 1.25rem 0 !important;
 		}
 	}
 }

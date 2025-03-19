@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import ContactAbout from '../components/ContactAbout';
+import ContactFormAndInfo from '../components/ContactFormAndInfo';
+import MapLocation from '../components/MapLocation';
+import FAQ from '../components/FAQ'
 import Footer from '../components/Footer';
 
 function Contact() {
@@ -14,6 +17,12 @@ function Contact() {
 			/>
 
 			<ContactAbout setResNavShowing={setResNavShowing} />
+
+			<ContactFormAndInfo />
+
+			<MapLocation />
+
+            <FAQ />
 
 			<Footer />
 		</div>

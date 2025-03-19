@@ -59,6 +59,10 @@ a {
 	}
 }
 
+.grayBg {
+	background-color: $backup-color;
+}
+
 // ---- Call to action buttons styling ----
 .ctaButtons {
 	display: flex;
