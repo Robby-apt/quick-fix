@@ -334,7 +334,6 @@ a {
   flex-direction: column;
   padding: 1.25rem;
   width: 30%;
-  min-width: 390px;
 }
 .cardDisplay .card h4 {
   font-size: 1.5rem;
@@ -356,7 +355,6 @@ a {
   flex-direction: column;
   padding: 1.25rem;
   width: 30%;
-  min-width: 390px;
 }
 .reviewCard .starsDisplay {
   border-bottom: rgba(0, 0, 0, 0.6) dotted 0.0625rem;
@@ -437,7 +435,6 @@ a {
   border-radius: 1.25rem;
   margin: auto 0 auto auto;
   width: 90%;
-  min-width: 360px;
 }
 
 .serviceMiniSection {
@@ -654,6 +651,9 @@ a {
   margin: 0 auto 0 0;
   padding: 0.625rem 1.25rem;
 }
+.contactFormAndInfo .contactFormDiv .contactForm button:hover {
+  background-color: #000;
+}
 
 iframe {
   margin: auto;
@@ -678,6 +678,13 @@ iframe {
   font-size: 1.25rem;
   font-weight: bolder;
   text-decoration: underline;
+}
+
+.userRegBg {
+  background-color: aqua;
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
 }
 
 @media (max-width: 930px) {
@@ -801,7 +808,7 @@ iframe {
     margin-right: auto !important;
   }
   .contactFormAndInfo {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .contactFormAndInfo .contactDiv {
     width: 100%;

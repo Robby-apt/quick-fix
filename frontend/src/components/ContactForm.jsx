@@ -62,6 +62,7 @@ function ContactForm() {
 						type="text"
 						name="name"
 						id="name"
+						autoFocus="true"
 						value={contactData.name}
 						onChange={handleChange}
 						minLength="2"

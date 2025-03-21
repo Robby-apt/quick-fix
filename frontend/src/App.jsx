@@ -6,6 +6,7 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import ForgotPass from './pages/ForgotPass';
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 			<Route path="/contact" element={<Contact />} />
 			<Route path="/login" element={<Login />} />
 			<Route path="/signup" element={<Signup />} />
+			<Route path="/forgot-password" element={<ForgotPass />} />
 		</Routes>
 	);
 }

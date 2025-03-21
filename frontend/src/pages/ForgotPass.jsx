@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-function Login() {
+function ForgotPass() {
 	let [isResNavShowing, setResNavShowing] = useState(false);
 
 	return (
-		<div className="page" id="loginPage">
+		<div className="page" id="forgotPage">
 			<Navbar
 				isResNavShowing={isResNavShowing}
 				setResNavShowing={setResNavShowing}
 			/>
-            
+
 			<div className="section grayBg userRegBg">
-				<p>Login</p>
+				<p>ForgotPass</p>
 			</div>
 
 			<Footer />
@@ -21,4 +21,4 @@ function Login() {
 	);
 }
 
-export default Login;
+export default ForgotPass;

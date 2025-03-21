@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Signup() {
-  return (
-    <div>Signup</div>
-  )
+	let [isResNavShowing, setResNavShowing] = useState(false);
+
+	return (
+		<div className="page" id="signupPage">
+			<Navbar
+				isResNavShowing={isResNavShowing}
+				setResNavShowing={setResNavShowing}
+			/>
+
+			<div className="section grayBg userRegBg">
+				<p>Signup</p>
+			</div>
+
+			<Footer />
+		</div>
+	);
 }
 
-export default Signup
+export default Signup;

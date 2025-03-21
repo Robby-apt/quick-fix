@@ -1,0 +1,10 @@
+.userRegBg {
+	background-color: aqua;
+    display: flex;
+	height: 100%;
+	flex-grow: 1;
+}
+
+// ---- Import Login, Forgot password and Signup
+@import './login';
+@import './signup';
