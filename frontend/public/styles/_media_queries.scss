@@ -109,6 +109,23 @@
 	.qaDiv {
 		grid-template-columns: repeat(1, 100%);
 	}
+
+	.section {
+		padding: 2.5rem;
+	}
+
+	.globalFooter {
+		padding: 2.5rem 2.5rem 0 2.5rem !important;
+
+		.columnDisplay {
+			padding: 0;
+			width: 100% !important;
+
+			.footerCol {
+				width: 100% !important;
+			}
+		}
+	}
 }
 
 @media (max-width: 1070px) {

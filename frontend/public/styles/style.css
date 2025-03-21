@@ -302,6 +302,7 @@ a {
   display: flex;
   padding: 0.625rem 0;
   justify-content: center;
+  text-align: center;
 }
 
 .iconBg {
@@ -760,6 +761,19 @@ iframe {
   }
   .qaDiv {
     grid-template-columns: repeat(1, 100%);
+  }
+  .section {
+    padding: 2.5rem;
+  }
+  .globalFooter {
+    padding: 2.5rem 2.5rem 0 2.5rem !important;
+  }
+  .globalFooter .columnDisplay {
+    padding: 0;
+    width: 100% !important;
+  }
+  .globalFooter .columnDisplay .footerCol {
+    width: 100% !important;
   }
 }
 @media (max-width: 1070px) {
