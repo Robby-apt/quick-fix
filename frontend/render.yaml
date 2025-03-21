@@ -4,5 +4,5 @@ static_sites:
       static_dir: build
       routes:
           - type: rewrite
-            source: '*'
+            source: '/*'
             destination: '/index.html'
