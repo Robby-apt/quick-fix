@@ -1,20 +1,28 @@
-import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
-import ServicesAbout from '../components/ServicesAbout';
-import Workings from '../components/Workings';
-import ServiceCategories from '../components/ServiceCategories';
-import GetStarted from '../components/GetStarted';
-import LandingStats from '../components/LandingStats';
-import Footer from '../components/Footer';
+import React, { useState, useEffect } from 'react';
+import Navbar from '../components/landing-components/Navbar';
+import ServicesAbout from '../components/landing-components/ServicesAbout';
+import Workings from '../components/landing-components/Workings';
+import ServiceCategories from '../components/landing-components/ServiceCategories';
+import FeaturedProvider from '../components/landing-components/FeaturedProvider';
+import GetStarted from '../components/landing-components/GetStarted';
+import LandingStats from '../components/landing-components/LandingStats';
+import Footer from '../components/landing-components/Footer';
 
-function Services() {
+function Services(props) {
 	let [isResNavShowing, setResNavShowing] = useState(false);
+
+	// Update currentPage when the component mounts
+	useEffect(() => {
+		props.setCurrentPage('services');
+	}, [props]);
 
 	return (
 		<div className="page" id="servicesPage">
 			<Navbar
 				isResNavShowing={isResNavShowing}
 				setResNavShowing={setResNavShowing}
+				currentPage={props.currentPage}
+				setCurrentPage={props.setCurrentPage}
 			/>
 
 			<ServicesAbout setResNavShowing={setResNavShowing} />
@@ -22,6 +30,8 @@ function Services() {
 			<Workings />
 
 			<ServiceCategories />
+
+            <FeaturedProvider />
 
 			<GetStarted />
 

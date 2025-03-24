@@ -196,6 +196,83 @@ a {
   background-color: #f8fafc;
 }
 
+.professionalsDisplay {
+  display: flex;
+  justify-content: space-between;
+  height: -moz-min-content;
+  height: min-content;
+  margin: auto 0;
+}
+.professionalsDisplay .professionalCard {
+  border: rgba(0, 0, 0, 0.6) solid 0.0625rem;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  width: 22.5%;
+  height: 50vh;
+  min-height: 500px;
+  overflow: hidden;
+}
+.professionalsDisplay .professionalCard .imgAndReviews {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+.professionalsDisplay .professionalCard .imgAndReviews img {
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+.professionalsDisplay .professionalCard .imgAndReviews .professionalReview {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  padding: 0.3125rem 0.625rem;
+  position: absolute;
+  top: 100%;
+  transform: translate(0, -100%);
+  width: 100%;
+}
+.professionalsDisplay .professionalCard .imgAndReviews .professionalReview i {
+  color: #ecb91d;
+  margin: auto 0.625rem auto 0;
+}
+.professionalsDisplay .professionalCard .imgAndReviews .professionalReview p {
+  font-weight: lighter;
+  margin: auto 0;
+}
+.professionalsDisplay .professionalCard .imgAndReviews .professionalReview p span {
+  font-weight: bold;
+}
+.professionalsDisplay .professionalCard .professionalDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem;
+  height: 100%;
+}
+.professionalsDisplay .professionalCard .professionalDetails h4 {
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+}
+.professionalsDisplay .professionalCard .professionalDetails h5 {
+  color: #2563eb;
+  margin-bottom: 0.625rem;
+}
+.professionalsDisplay .professionalCard .professionalDetails p {
+  margin: 0 0 auto 0;
+}
+.professionalsDisplay .professionalCard .professionalDetails a {
+  background-color: rgba(37, 100, 235, 0.9);
+  border-radius: 0.3125rem;
+  color: #fff;
+  margin: auto auto auto 0;
+  padding: 0.3125rem 0.625rem;
+}
+.professionalsDisplay .professionalCard .professionalDetails a:hover {
+  background-color: #2563eb;
+}
+
 .ctaButtons {
   display: flex;
   flex-direction: row;
@@ -688,6 +765,11 @@ iframe {
   flex-grow: 1;
 }
 
+@media (max-width: 760px) {
+  .professionalsDisplay #cardProf {
+    width: 80% !important;
+  }
+}
 @media (max-width: 930px) {
   .branding {
     margin: 1.25rem auto 1.25rem 2.5rem !important;
@@ -774,6 +856,15 @@ iframe {
   }
   .globalFooter .columnDisplay .footerCol {
     width: 100% !important;
+  }
+  .professionalsDisplay {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .professionalsDisplay .professionalCard {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60% !important;
   }
 }
 @media (max-width: 1070px) {
@@ -865,5 +956,14 @@ iframe {
   .landingHero .heroImg img {
     margin: auto;
     width: 70%;
+  }
+  .professionalsDisplay {
+    display: grid;
+    grid-template-columns: repeat(2, 40%) !important;
+    gap: 2.5rem 0;
+    justify-content: space-around;
+  }
+  .professionalsDisplay .professionalCard {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

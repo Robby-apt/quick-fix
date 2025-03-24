@@ -1,8 +1,12 @@
-// @media (max-width: 760px) {
-// 	.contactFormAndMedia {
-// 		width: 90vw !important;
-// 	}
-// }
+@media (max-width: 760px) {
+	.professionalsDisplay {
+		// background-color: aqua;
+
+		#cardProf {
+			width: 80% !important;
+		}
+	}
+}
 
 @media (max-width: 930px) {
 	.branding {
@@ -124,6 +128,17 @@
 			.footerCol {
 				width: 100% !important;
 			}
+		}
+	}
+
+	.professionalsDisplay {
+		display: flex !important;
+		flex-direction: column !important;
+
+		.professionalCard {
+			margin-left: auto;
+			margin-right: auto;
+			width: 60% !important;
 		}
 	}
 }
@@ -253,6 +268,17 @@
 				margin: auto;
 				width: 70%;
 			}
+		}
+	}
+
+	.professionalsDisplay {
+		display: grid;
+		grid-template-columns: repeat(2, 40%) !important;
+		gap: 2.5rem 0;
+		justify-content: space-around;
+
+		.professionalCard {
+			width: 100%;
 		}
 	}
 }

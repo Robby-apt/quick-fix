@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../components/landing-components/Navbar';
+import Footer from '../components/landing-components/Footer';
 
 function Login() {
 	let [isResNavShowing, setResNavShowing] = useState(false);
@@ -11,7 +11,7 @@ function Login() {
 				isResNavShowing={isResNavShowing}
 				setResNavShowing={setResNavShowing}
 			/>
-            
+
 			<div className="section grayBg userRegBg">
 				<p>Login</p>
 			</div>
