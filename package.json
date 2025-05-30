@@ -42,6 +42,7 @@
 		"@supabase/ssr": "latest",
 		"@supabase/supabase-js": "latest",
 		"autoprefixer": "^10.4.20",
+		"bcrypt": "^6.0.0",
 		"bcryptjs": "latest",
 		"better-sqlite3": "latest",
 		"class-variance-authority": "^0.7.1",
@@ -70,6 +71,7 @@
 		"zod": "latest"
 	},
 	"devDependencies": {
+		"@types/bcrypt": "^5.0.2",
 		"@types/node": "^22",
 		"@types/react": "^19.1.6",
 		"@types/react-dom": "^19.1.5",

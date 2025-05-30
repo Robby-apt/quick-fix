@@ -2,12 +2,20 @@
 
 import sqlite3 from 'sqlite3';
 import { open, Database } from 'sqlite';
+import bcrypt from 'bcrypt';
 
-// Use sqlite3 in verbose mode for better debugging
 sqlite3.verbose();
 
-// Exported database object
 let db: Database<sqlite3.Database, sqlite3.Statement>;
+
+export type User = {
+	id: number;
+	email: string;
+	role: string;
+	name: string;
+	phone: string;
+	location: string;
+};
 
 export async function initDB() {
 	db = await open({
@@ -20,7 +28,7 @@ export async function initDB() {
 
     CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      name TEXT NOT NULL,
+      name TEXT,
       email TEXT UNIQUE NOT NULL,
       password TEXT NOT NULL,
       phone TEXT,
@@ -106,10 +114,43 @@ export async function getDB() {
 	return db;
 }
 
-// Helper functions (examples)
 export async function getUserByEmail(email: string) {
 	const db = await getDB();
 	return db.get('SELECT * FROM users WHERE email = ?', email);
+}
+
+export async function createUser(
+	email: string,
+	password: string,
+	role: 'client' | 'technician' | 'admin',
+	name: string,
+	phone: string,
+	location: string
+): Promise<User> {
+	const db = await getDB();
+	const hashedPassword = await bcrypt.hash(password, 10);
+
+	const result = await db.run(
+		`
+      INSERT INTO users (name, email, password, phone, location, user_type)
+      VALUES (?, ?, ?, ?, ?, ?)
+    `,
+		[name, email, hashedPassword, phone, location, role]
+	);
+
+	const id = result.lastID;
+	if (typeof id !== 'number') {
+		throw new Error('Failed to create user: no ID returned from database.');
+	}
+
+	return {
+		id,
+		email,
+		role,
+		name,
+		phone,
+		location,
+	};
 }
 
 export async function createBooking(
