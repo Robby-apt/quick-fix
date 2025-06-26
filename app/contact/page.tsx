@@ -42,7 +42,6 @@ export default function ContactPage() {
 											<br />
 											Nairobi, Kenya
 											<br />
-											United States
 										</p>
 									</div>
 								</CardContent>
@@ -72,9 +71,9 @@ export default function ContactPage() {
 											Call Us
 										</h3>
 										<p className="text-muted-foreground">
-											+1 (123) 456-7890
+											+254 000 000 000
 											<br />
-											Monday - Friday, 9am - 6pm
+											Monday - Friday, 8am - 5pm
 										</p>
 									</div>
 								</CardContent>

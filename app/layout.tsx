@@ -10,10 +10,25 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Quick Fix - Connect with Local Handymen",
-  description: "Find skilled handymen in your area for plumbing, electrical, roofing and more.",
-    generator: 'v0.dev'
-}
+	title: 'Quick Fix - Connect with Local Handymen',
+	description:
+		'Find skilled handymen in your area for plumbing, electrical, roofing and more.',
+	keywords: [
+		'handyman services',
+		'local handymen',
+		'plumbing',
+		'electrical',
+		'roofing',
+		'home repair',
+		'quick fix',
+		'find handyman',
+	],
+	icons: {
+		icon: '/images/quick-fix.svg',
+		shortcut: '/images/quick-fix.svg',
+		apple: '/images/quick-fix.svg',
+	},
+};
 
 export default function RootLayout({
   children,

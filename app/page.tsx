@@ -100,9 +100,13 @@ export default function LandingPage() {
 							<div className="relative w-full max-w-md">
 								<div className="absolute -top-6 -left-6 w-24 h-24 bg-secondary rounded-full z-0"></div>
 								<img
-									src="https://drive.google.com/file/d/1iQ_T3tM4K-aSEcu7cbPM-5rQt7s92Wxw/view?usp=sharing"
-									alt="Handyman fixing a sink"
+									src={`/images/hero-img.jpg`}
+									alt="Handyman at work"
 									className="rounded-lg shadow-xl relative z-10"
+									style={{
+										WebkitTransform: 'scaleX(-1)',
+										transform: 'scaleX(-1)',
+									}}
 								/>
 								<div className="absolute -bottom-6 -right-6 w-24 h-24 bg-secondary rounded-full z-0"></div>
 							</div>
